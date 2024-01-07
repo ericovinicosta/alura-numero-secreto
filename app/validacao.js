@@ -40,7 +40,7 @@ ChuteEhValido = (chute) => {
 }
 
 const chuteEhGameOver = (chute) => {
-    return chute.toLowerCase() === 'game over';
+    return chute.toLowerCase() === 'game over' && !chuteCerto(Number.parseInt(chute));
 };
 
 const chuteForInvalido = (numero) => {
