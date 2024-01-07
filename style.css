@@ -5,6 +5,8 @@
     /* cores escolhidas com o colorhunt.co */
     --bg-color: rgb(45, 149, 150);
     --primary-color: rgb(236, 244, 214);
+    --erro-color: rgb(255, 0, 0);
+    --bg-gameover: rgb(250, 239, 93);
 }
 
 body {
@@ -43,4 +45,23 @@ h3 {
     display: inline-block;
     font-size: 4em;
     margin: 20px;
+}
+
+.erro {
+    color: var(--erro-color);
+    font-weight: bolder;
+}
+
+.game-over {
+    background-color: var(--bg-gameover);
+}
+
+.btn-jogar {
+    cursor: pointer;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border: 0;
+    height: 3em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
 }
